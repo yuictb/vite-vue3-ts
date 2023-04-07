@@ -1,0 +1,117 @@
+@input-width: 220px;
+
+.el-button {
+  padding: 9px 15px;
+  font-size: 12px;
+}
+.el-form-item {
+  .el-input {
+    width: @input-width;
+  }
+  .el-input__wrapper {
+    width: @input-width;
+  }
+  .el-select {
+    width: @input-width;
+  }
+  .el-input-number {
+    width: @input-width;
+  }
+  .el-textarea__inner {
+    width: @input-width;
+  }
+  .long-textarea .el-textarea__inner {
+    width: 80%;
+  }
+  .el-select.short-select,
+  .el-select.short-select .el-input {
+    width: 100px;
+  }
+}
+.upload-file-class .el-upload {
+  display: none;
+}
+.data-table {
+  .el-table--small th {
+    padding: 8px 0;
+  }
+  .el-table--small td {
+    padding: 3px 0;
+  }
+  .el-table td,
+  .el-table th.is-leaf {
+    border-bottom: 1px solid #a0a0a0;
+  }
+  .el-table th {
+    background: #e0f1ff !important;
+    color: #000;
+  }
+  .plTableBox .el-table th {
+    background: #e0f1ff !important;
+    color: #000;
+  }
+  .el-table .el-button {
+    font-size: 12px;
+  }
+}
+.el-table th.gutter {
+  display: table-cell !important;
+}
+.home-nav .el-submenu__title:hover {
+  background-color: #111b28 !important;
+}
+// 弹窗
+.el-dialog {
+  border-radius: 4px;
+  .el-dialog__header {
+    margin: 0;
+  }
+  .el-dialog__body {
+    padding: 20px;
+  }
+  .el-dialog__headerbtn {
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #111b28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #111b28;
+    .el-dialog__close {
+      color: #111b28;
+    }
+  }
+  .dialog-footer {
+    .el-button {
+      min-width: 120px;
+      height: 36px;
+      font-size: 14px;
+    }
+  }
+}
+// loading加载层级
+.el-loading-mask {
+  z-index: 99999 !important;
+}
+
+.twoSide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  .el-form-item {
+    width: 50%;
+  }
+}
+.threeSide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  .el-form-item {
+    width: 33.33%;
+  }
+}
