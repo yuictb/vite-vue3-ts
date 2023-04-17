@@ -1,6 +1,10 @@
 <template>
-  <div>首页</div>
-  <el-button type="primary" @click="ElMessage.success('成功')">点击</el-button>
+  <div
+    class="text-center text-white w-48px h-48px rounded-50% leading-48px bg-blue"
+    @click="ElMessage.success('成功')"
+  >
+    首页
+  </div>
 </template>
 <script lang="ts" setup>
 import { ElMessage } from "element-plus"

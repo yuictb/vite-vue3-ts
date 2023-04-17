@@ -8,6 +8,7 @@ import Icons from "unplugin-icons/vite"
 import IconsResolver from "unplugin-icons/resolver"
 import viteEslint from "vite-plugin-eslint"
 import vue from "@vitejs/plugin-vue"
+import UnoCSS from "unocss/vite"
 import proxy from "./src/http/proxy.d"
 const pathSrc = path.resolve(__dirname, "src")
 // https://vitejs.dev/config/
@@ -16,6 +17,7 @@ export default ({ mode }) => {
   console.log("当前环境", env)
   return defineConfig({
     plugins: [
+      UnoCSS(),
       vue(),
       ElementPlus({}),
       AutoImport({

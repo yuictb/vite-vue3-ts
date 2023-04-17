@@ -22,15 +22,6 @@ export const politicalTypes: any = [
   { value: 9, label: "台盟盟员" }
 ]
 export const educationTypes: any = [
-  //   0 = primary school 小学及其以上
-  // 1 = junior_high_school 初中及其以上
-  // 2 = high_school 高中及其以上
-  // 3 = vocational_high_school 职高及其以上
-  // 4 = secondary_school 中专及其以上
-  // 5 = junior_college 大专及其以上
-  // 6 = undergraduate 本科及其以上
-  // 7 = master 硕士及其以上
-  // 8 = doctor 博士
   { value: 0, label: "小学及其以上" },
   { value: 1, label: "初中及其以上" },
   { value: 2, label: "高中及其以上" },

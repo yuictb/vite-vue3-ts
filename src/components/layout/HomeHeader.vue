@@ -1,6 +1,6 @@
 <template>
   <div class="w-full headContainer overflow-hidden">
-    <div style="height: 53px" class="fixed w-full z-50 bg-white">
+    <div class="fixed w-full h-53px z-50 bg-white">
       <header class="w-1200px h-full m-auto flex items-center justify-between">
         <div class="flex items-center">
           <div class="w-20 mr-24">
@@ -8,8 +8,7 @@
           </div>
           <ul class="flex items-center">
             <li
-              style="height: 53px"
-              class="p-4 mx-2 box-border font-medium cursor-pointer"
+              class="p-4 mx-2 box-border font-medium cursor-pointer h-53px"
               :class="router.currentRoute.value.fullPath == item.path ? 'active' : ''"
               v-for="item in routerInfo"
               :key="item.name"
